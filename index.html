@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.toggleOption.js"></script>
+<script>
+$(function(){
+$("#s").click(function(){$("select option").toggleOption('show'); });
+$("#h").click(function(){$("select option").toggleOption('hide'); });
+$("select option:nth-of-type(2)").toggleOption('hide');
+})</script>
+</head>
+<body>
+<pre>
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jquery.toggleOption.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$("#s").click(function(){$("select option").toggleOption('show'); });
+$("#h").click(function(){$("select option").toggleOption('hide'); });
+$("select option:nth-of-type(2)").toggleOption('hide');
+&lt;/script&gt;
+</pre>
+<select>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
+<a href="#" id="h"> hide </a><a href="#" id="s"> show </a>
+</body>
+</html>
